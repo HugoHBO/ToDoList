@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(236, 236, 236);
+}
+
+header {
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+#toAddTask {
+  margin-bottom: 15px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftDate {
+  display: flex;
+  align-items: center;
+}
+
+#numberDate {
+  font-size: 50px;
+}
+
+#textDate {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#monthDate,
+#numberDate,
+#textDate {
+  font-weight: bold;
+}
+#monthDate::first-letter {
+  text-transform: capitalize;
+}
+#monthDate,
+#yearDate {
+  margin-left: 7px;
+  font-size: 20px;
+}
+
+.padding {
+  font-size: 16px;
+  padding: 5px;
+  background-color: rgb(243, 240, 240);
+  outline: none;
+  color: gray;
+}
+.roundBorder {
+  border-radius: 10px;
+  border: navajowhite;
+}
+
+#newTask::placeholder {
+  padding-left: 3px;
+}
+
+#newTask {
+  background-color: white;
+}
+
+.add {
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  color: gray;
+}
+
+.add:hover {
+  font-weight: bold;
+  color: white;
+  background-color: rgba(157, 233, 157, 0.657);
+}
+
+h2 {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+input:focus {
+  outline: none;
+}
+
+#toAddTask {
+  margin-bottom: 15px;
+}
+
+.remove:hover {
+  cursor: pointer;
+  background-color: rgba(231, 67, 67, 0.794);
+  color: white;
+  font-weight: bold;
+}
+
+.li {
+  background-color: white;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+article {
+  padding: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.articleAside {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+#newTask {
+  width: 45%;
+  margin-right: 10px;
+}
+
+#importance {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#taskP {
+  padding-right: 0;
+  margin-right: 10px;
+  max-width: 45vh;
+  max-height: 6.6vh;
+  overflow: auto;
+  cursor: pointer;
+}
+
+#taskP::-webkit-scrollbar {
+  display: none; /* Ocultar scroll */
+}
+
+#doneInput:hover {
+  cursor: pointer;
+}
+
+.articleAside :nth-child(2) {
+  font-size: 16px;
+  margin-right: 10px;
+  letter-spacing: 0.5px;
+}
+
+.h2yRemove {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.page {
+  margin: 25px auto;
+  padding: 25px;
+  background-color: rgba(247, 236, 141, 0.829);
+  width: 100%;
+  min-width: 350px;
+  max-width: 35%;
+}
+
+.important {
+  border-radius: 10px;
+  background-color: rgba(146, 236, 146, 0.664);
+}
+
+.done {
+  text-decoration: line-through;
+}

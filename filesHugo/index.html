@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="Primer proyecto HAB sobre crear una lista de tareas"
+    />
+    <meta
+      name="Author"
+      content="Carlos J. Zuazo, Daniel Mejía Cano y Hugo Barros Olano"
+    />
+    <title>Lista de tareas</title>
+    <!-- links, scripts y fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/js/main.js" defer></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Covertura de la página -->
+    <section class="page roundBorder">
+      <header>
+        <!-- Nombre de la página -->
+        <h1>BLOC DE NOTAS</h1>
+
+        <!-- Fechas del header -->
+        <section class="date">
+          <section class="leftDate">
+            <section id="numberDate"></section>
+            <section>
+              <aside id="monthDate"></aside>
+              <aside id="yearDate"></aside>
+            </section>
+          </section>
+          <div id="textDate"></div>
+        </section>
+      </header>
+      <main>
+        <!-- Form, select y button -->
+        <section id="toAddTask">
+          <form name="taskForm">
+            <p>
+              <!-- Imput -->
+              <label for="newTask">
+                <input
+                  type="text"
+                  name="NewTask"
+                  id="newTask"
+                  maxlength="100"
+                  placeholder="Nueva tarea..."
+                  autofocus
+                  autocomplete="off"
+                  class="padding roundBorder"
+                />
+              </label>
+              <!-- Selector de importancia -->
+              <label for="importance"></label>
+              <select
+                name="relevance"
+                id="importance"
+                class="padding roundBorder"
+                required
+              >
+                <option value="0">Normal</option>
+                <option value="1">Importante</option>
+              </select>
+              <!-- Button AddTask -->
+              <button id="submitTask" class="padding add">+</button>
+            </p>
+          </form>
+        </section>
+
+        <!-- Lista de tareas -->
+        <section id="taskList">
+          <section class="h2yRemove">
+            <h2>Listas de tareas</h2>
+            <button id="removeTasks" class="padding remove roundBorder">
+              Limpiar
+            </button>
+          </section>
+
+          <ul id="userList" style="list-style: none"></ul>
+        </section>
+      </main>
+      <footer></footer>
+    </section>
+  </body>
+</html>
