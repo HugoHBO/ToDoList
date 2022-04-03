@@ -13,7 +13,8 @@
       content="Carlos J. Zuazo, Daniel Mejía Cano y Hugo Barros Olano"
     />
     <title>Lista de tareas</title>
-    <!-- links, scripts y fonts -->
+    <!-- links, scripts, fonts, favicon -->
+    <link rel="icon" type="image" href="image/Favicon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap"
       rel="stylesheet"
@@ -28,51 +29,48 @@
       <header>
         <!-- Nombre de la página -->
         <h1>BLOC DE NOTAS</h1>
-
         <!-- Fechas del header -->
         <section class="date">
           <section class="leftDate">
-            <section id="numberDate"></section>
+            <p id="numberDate"></p>
             <section>
-              <aside id="monthDate"></aside>
-              <aside id="yearDate"></aside>
+              <p id="monthDate"></p>
+              <p id="yearDate"></p>
             </section>
           </section>
-          <div id="textDate"></div>
+          <p id="textDate"></p>
         </section>
       </header>
       <main>
         <!-- Form, select y button -->
         <section id="toAddTask">
           <form name="taskForm">
-            <p>
-              <!-- Imput -->
-              <label for="newTask">
-                <input
-                  type="text"
-                  name="NewTask"
-                  id="newTask"
-                  maxlength="100"
-                  placeholder="Nueva tarea..."
-                  autofocus
-                  autocomplete="off"
-                  class="padding roundBorder"
-                />
-              </label>
-              <!-- Selector de importancia -->
-              <label for="importance"></label>
-              <select
-                name="relevance"
-                id="importance"
+            <!-- Imput -->
+            <label for="newTask">
+              <input
+                type="text"
+                name="NewTask"
+                id="newTask"
+                maxlength="100"
+                placeholder="Nueva tarea..."
+                autofocus
+                autocomplete="off"
                 class="padding roundBorder"
-                required
-              >
-                <option value="0">Normal</option>
-                <option value="1">Importante</option>
-              </select>
-              <!-- Button AddTask -->
-              <button id="submitTask" class="padding add">+</button>
-            </p>
+              />
+            </label>
+            <!-- Selector de importancia -->
+            <label for="importance"></label>
+            <select
+              name="relevance"
+              id="importance"
+              class="padding roundBorder"
+              required
+            >
+              <option value="0">Normal</option>
+              <option value="1">Importante</option>
+            </select>
+            <!-- Button AddTask -->
+            <button id="submitTask" class="padding add">+</button>
           </form>
         </section>
 
@@ -88,7 +86,6 @@
           <ul id="userList" style="list-style: none"></ul>
         </section>
       </main>
-      <footer></footer>
     </section>
   </body>
 </html>

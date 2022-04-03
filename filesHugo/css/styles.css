@@ -17,6 +17,7 @@ header {
 
 h1 {
   margin-bottom: 5px;
+  padding-left: 5px;
 }
 
 #toAddTask {
@@ -24,6 +25,8 @@ h1 {
 }
 
 .date {
+  padding-left: 5px;
+  padding-right: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -173,6 +176,8 @@ article {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .page {
